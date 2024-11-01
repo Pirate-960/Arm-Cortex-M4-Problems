@@ -15,7 +15,8 @@ int main(void)
 
     // Calculate multiplyFactor based on the number of digits in num1
     int temp = num1;
-    while (temp >= 10) {
+    while (temp >= 10)
+    {
         multiplyFactor *= 10;
         temp /= 10;
     }
