@@ -12,8 +12,8 @@ __main PROC
 	MOV r0, #0 ; total
 	;r1 = input = a 
 	;r2 = input = b 
-	MOV r1, #3 
-	MOV r2, #5 
+	MOV r1, #45 
+	MOV r2, #3
 	
 	; r3 = loop counter
 	MOV r3, #0
