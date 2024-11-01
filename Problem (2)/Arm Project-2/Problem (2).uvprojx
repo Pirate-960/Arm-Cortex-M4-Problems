@@ -10,6 +10,7 @@
       <TargetName>Target_1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>6220000::V6.22::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -397,6 +398,11 @@
               <FileName>stm32l476xx_constants.s</FileName>
               <FileType>2</FileType>
               <FilePath>.\stm32l476xx_constants.s</FilePath>
+            </File>
+            <File>
+              <FileName>Q2 - DataMemInput.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Q2 - DataMemInput.s</FilePath>
             </File>
           </Files>
         </Group>
