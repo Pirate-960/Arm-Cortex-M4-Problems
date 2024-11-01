@@ -15,7 +15,7 @@ int main(void)
 
     // Calculate multiplyFactor based on the number of digits in num1
     int temp = num1;
-    while (temp >= 10)
+    while (temp > 0)
     {
         multiplyFactor *= 10;
         temp /= 10;
@@ -25,7 +25,8 @@ int main(void)
     {
         printf("\n========================\n");
         printf("%d", sum);
-        sum = sum * multiplyFactor + num1;
+        // Shift `sum` and add `num1` as the next term in series
+        sum = sum * multiplyFactor + num1; 
         total += sum;
         printf(" -> %d\n", sum);
         printf("Total: %d\n", total);
