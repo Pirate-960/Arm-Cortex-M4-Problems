@@ -2,6 +2,7 @@
 ".\objects\core_cm4_constants.o"
 ".\objects\startup_stm32l476xx.o"
 ".\objects\stm32l476xx_constants.o"
+".\objects\q1 - datameminput.o"
 ".\objects\q1.o"
 --strict --scatter ".\Objects\Problem (1).sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
