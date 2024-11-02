@@ -404,11 +404,6 @@
               <FileType>2</FileType>
               <FilePath>.\Q1 - DataMemInput.s</FilePath>
             </File>
-            <File>
-              <FileName>Q1.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Q1.s</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>

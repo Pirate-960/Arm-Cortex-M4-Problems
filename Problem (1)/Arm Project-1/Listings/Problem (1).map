@@ -24,9 +24,8 @@ Removing Unused input sections from the image.
     Removing stm32l476xx_constants.o(__DEFINES_STM32L4_xx_DUMMY), (0 bytes).
     Removing q1 - datameminput.o(__DEFINES_STM32F4_CORE4_xx_DUMMY), (0 bytes).
     Removing q1 - datameminput.o(__DEFINES_STM32L4_xx_DUMMY), (0 bytes).
-    Removing q1.o(.text), (0 bytes).
 
-5 unused section(s) (total 0 bytes) removed from the image.
+4 unused section(s) (total 0 bytes) removed from the image.
 
 ==============================================================================
 
@@ -60,7 +59,7 @@ Image Symbol Table
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
-    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$STANDARDLIB$REQ8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
     Image$$ER_IROM1$$RW$$Length              0x00000000   Number         0  anon$$obj.o ABSOLUTE
     Image$$ER_IROM1$$ZI$$Length              0x00000000   Number         0  anon$$obj.o ABSOLUTE
     Image$$RW_IRAM1$$RO$$Length              0x00000000   Number         0  anon$$obj.o ABSOLUTE
@@ -199,7 +198,7 @@ Memory Map of the image
 
     0x08000000   0x08000000   0x00000188   Data   RO            4    RESET               startup_stm32l476xx.o
     0x08000188   0x08000188   0x0000008c   Code   RO            5    .text               startup_stm32l476xx.o
-    0x08000214   0x08000214   0x00000006   Code   RO           23    .text               c_w.l(heapauxi.o)
+    0x08000214   0x08000214   0x00000006   Code   RO           21    .text               c_w.l(heapauxi.o)
     0x0800021a   0x0800021a   0x00000002   PAD
     0x0800021c   0x0800021c   0x00000048   Code   RO           15  * P1                  q1 - datameminput.o
 
