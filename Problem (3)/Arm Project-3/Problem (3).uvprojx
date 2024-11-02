@@ -400,9 +400,9 @@
               <FilePath>.\stm32l476xx_constants.s</FilePath>
             </File>
             <File>
-              <FileName>Q3.s</FileName>
+              <FileName>Q3 - DataMemInput.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Q3.s</FilePath>
+              <FilePath>.\Q3 - DataMemInput.s</FilePath>
             </File>
           </Files>
         </Group>
