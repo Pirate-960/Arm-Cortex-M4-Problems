@@ -1,6 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
+// Function prototypes
+unsigned int countDigits(unsigned int num);
+unsigned int calculateSum(unsigned int a, unsigned int n);
+
+int main()
+{
+    // Initialize input values (equivalent to the DCD directive in assembly)
+    unsigned int a = 45; // First input value
+    unsigned int n = 3;  // Second input value
+
+    // Calculate and print result
+    unsigned int result = calculateSum(a, n);
+
+    printf("Input values: a = %u, n = %u\n", a, n);
+    printf("Result: %u\n", result);
+
+    // Show the calculation pattern
+    printf("\nCalculation pattern:\n");
+    unsigned int currentSum = 0;
+    unsigned int factor = countDigits(a);
+    for (unsigned int i = 0; i < n; i++)
+    {
+        currentSum = (currentSum * factor) + a;
+        printf("Step %u: %u\n", i + 1, currentSum);
+    }
+
+    return 0;
+}
+
 // Function to calculate the number of digits in a number
 unsigned int countDigits(unsigned int num)
 {
@@ -33,29 +64,4 @@ unsigned int calculateSum(unsigned int a, unsigned int n)
     }
 
     return total;
-}
-
-int main()
-{
-    // Initialize input values (equivalent to the DCD directive in assembly)
-    unsigned int a = 45; // First input value
-    unsigned int n = 3;  // Second input value
-
-    // Calculate and print result
-    unsigned int result = calculateSum(a, n);
-
-    printf("Input values: a = %u, n = %u\n", a, n);
-    printf("Result: %u\n", result);
-
-    // Show the calculation pattern
-    printf("\nCalculation pattern:\n");
-    unsigned int currentSum = 0;
-    unsigned int factor = countDigits(a);
-    for (unsigned int i = 0; i < n; i++)
-    {
-        currentSum = (currentSum * factor) + a;
-        printf("Step %u: %u\n", i + 1, currentSum);
-    }
-
-    return 0;
 }
