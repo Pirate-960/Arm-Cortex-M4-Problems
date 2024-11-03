@@ -5,6 +5,34 @@
 #define ROWS 3
 #define COLS 3
 
+// Function prototypes
+void swapColumns(int matrix[ROWS][COLS], int col1, int col2);
+void printMatrix(int matrix[ROWS][COLS]);
+
+int main()
+{
+    // Initialize the matrix with the same values as in the assembly
+    int matrix[ROWS][COLS] = {
+        {1, 2, 3},
+        {1, 2, 3},
+        {1, 2, 3}};
+
+    // Column indices to swap (adjust for 0-based indexing)
+    int col1 = 1; // Second column (index 1)
+    int col2 = 2; // Third column (index 2)
+
+    printf("Original matrix:\n");
+    printMatrix(matrix);
+
+    // Perform the column swap
+    swapColumns(matrix, col1, col2);
+
+    printf("Matrix after swapping columns %d and %d:\n", col1, col2);
+    printMatrix(matrix);
+
+    return 0;
+}
+
 // Function to swap columns in a matrix
 void swapColumns(int matrix[ROWS][COLS], int col1, int col2)
 {
@@ -47,28 +75,4 @@ void printMatrix(int matrix[ROWS][COLS])
         printf("\n");
     }
     printf("\n");
-}
-
-int main()
-{
-    // Initialize the matrix with the same values as in the assembly
-    int matrix[ROWS][COLS] = {
-        {1, 2, 3},
-        {1, 2, 3},
-        {1, 2, 3}};
-
-    // Column indices to swap (adjust for 0-based indexing)
-    int col1 = 1; // Second column (index 1)
-    int col2 = 2; // Third column (index 2)
-
-    printf("Original matrix:\n");
-    printMatrix(matrix);
-
-    // Perform the column swap
-    swapColumns(matrix, col1, col2);
-
-    printf("Matrix after swapping columns %d and %d:\n", col1, col2);
-    printMatrix(matrix);
-
-    return 0;
 }
