@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
 // Function prototypes
 unsigned int countDigits(unsigned int num);
 unsigned int calculateSum(unsigned int a, unsigned int n);

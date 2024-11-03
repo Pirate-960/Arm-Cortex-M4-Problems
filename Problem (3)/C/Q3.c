@@ -1,6 +1,29 @@
 #include <stdio.h>
 #include <stdint.h>
 
+// Function prototypes
+uint16_t expandToHamming(uint8_t input);
+void printBinary(uint16_t num, int bits);
+uint16_t calculateParity(uint16_t data, uint16_t mask);
+
+int main()
+{
+    // Original 8-bit input (0xB3 = 179 in decimal)
+    uint8_t input = 0xB3;
+
+    printf("Input byte (0x%02X):\n", input);
+    printBinary(input, 8);
+
+    // Expand to 13-bit Hamming code
+    uint16_t hammingCode = expandToHamming(input);
+
+    printf("\nHamming code (13-bit):\n");
+    printf("Hexadecimal: 0x%04X\n", hammingCode);
+    printBinary(hammingCode, 13);
+
+    return 0;
+}
+
 // Function to calculate parity for a given mask and data
 uint16_t calculateParity(uint16_t data, uint16_t mask)
 {
@@ -68,22 +91,4 @@ void printBinary(uint16_t num, int bits)
             printf(" "); // Space every 4 bits for readability
     }
     printf("\n");
-}
-
-int main()
-{
-    // Original 8-bit input (0xB3 = 179 in decimal)
-    uint8_t input = 0xB3;
-
-    printf("Input byte (0x%02X):\n", input);
-    printBinary(input, 8);
-
-    // Expand to 13-bit Hamming code
-    uint16_t hammingCode = expandToHamming(input);
-
-    printf("\nHamming code (13-bit):\n");
-    printf("Hexadecimal: 0x%04X\n", hammingCode);
-    printBinary(hammingCode, 13);
-
-    return 0;
 }
